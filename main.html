@@ -1,0 +1,324 @@
+<html lang="en">
+
+<head>
+    <title>SURVEY PAGE</title>
+    <link rel="icon" href="https://cdn3.vectorstock.com/i/1000x1000/06/52/music-player-icon-for-logos-websites-and-apps-vector-30290652.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montaga&display=swap');
+         :root {
+            font-size: 12px;
+            background-color: lightsalmon;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montaga', serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.5;
+            margin: 5px;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background-image: url(https://i0.wp.com/www.tipsnepal.com/wp-content/uploads/2022/04/pexels-sebastian-ervi-1763075.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        h1 {
+            color: rgb(0, 0, 0);
+            font-family: 'Lilita One', cursive;
+            font-size: 3.8rem;
+            font-weight: 500;
+            line-height: 1.4;
+            text-align: center;
+            margin: 0 auto 0.5rem auto;
+        }
+        
+        p {
+            font-size: 1.5rem;
+            margin: 0 auto 0.5rem auto;
+        }
+        
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        input,
+        select,
+        textarea,
+        button {
+            margin: 0;
+            font-weight: inherit;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 2rem auto 0 auto;
+        }
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        
+        .header {
+            padding: 0 0.7rem;
+            margin: 1.75rem;
+        }
+        
+        #description {
+            color: rgb(0, 0, 0);
+            font-style: italic;
+            font-size: 1.75rem;
+            font-weight: 200;
+            text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.4);
+            text-align: center;
+        }
+        
+        .clue {
+            margin-left: 0.35rem;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+        
+        form {
+            background: rgba(245, 244, 243, 0.767);
+            margin-top: 5px;
+            padding: 3.5rem 1rem;
+            border-radius: 0.25rem;
+        }
+        
+        @media (min-width: 480px) {
+            form {
+                padding: 2.7rem;
+            }
+        }
+        
+        .group-Music {
+            margin-top: 0;
+            margin-bottom: 1.15rem;
+        }
+        
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 3rem;
+            padding: 0.35rem 1rem;
+            background-clip: padding-box;
+            border: 1px solid #dbdacf;
+            border-radius: 0.27rem;
+        }
+        
+        .form-control:focus {
+            border-color: #1971cf;
+            box-shadow: 0 0 0 0.2rem rgba(5, 25, 48, 0.25);
+        }
+        
+        .input-radio,
+        .input-checkbox {
+            display: inline-block;
+            margin-right: 0.7rem;
+            min-height: 1.25rem;
+            min-width: 1.5rem;
+        }
+        
+        .input-textarea {
+            width: 100%;
+            min-height: 8.5rem;
+            border-radius: 0.27rem;
+            padding: 0.7rem;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            display: block;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            border: 1px solid #ffffff;
+            font-weight: 600;
+            color: solid #ffffff;
+            font-size: 14px;
+            background-color: rgb(0, 0, 0);
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+            outline: none;
+            color: #000000;
+            border: 1px solid #ffffff;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Music Survey Form</h1>
+            <p id="description">Taking this survey for help us to give you some more music</p>
+        </header>
+        <form id="survey-form">
+
+            <div class="group-Music">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="group-Music">
+                <label for="email" id="label-email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="group-Music">
+                <label for="number" id="label-number">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" placeholder="Age" min="12" max="100" class="form-control" pattern="\d*">
+            </div>
+            <div class="group-Music">
+                <p>Witch option best describe your current job</p>
+                <select name="time" id="dropdown" class="form-control" required>
+                      <option disabled selected value>Select current job</option>
+                      <option value="student">Student</option>
+                      <option value="job">Full Time Job</option>
+                      <option value="learner">Full Time Learner</option>
+                      <option value="preferNo">Prefer Not To Say</option>
+                      <option value="other">Other</option>
+                    </select>
+
+            </div>
+            <div class="group-Music">
+                <p>How long you listen songs every day?</p>
+                <label>
+                  <input
+                    type="radio"
+                    name="long"
+                    value="1-5 Hours"
+                    class="input-radio"
+                    checked
+                  />1-5 Hours
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="long"
+                    value="6-10 Hours"
+                    class="input-radio"
+                  />6-10 Hours
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="long"
+                    value="10 Hours++"
+                    class="input-radio"
+                  />10 Hours++
+                </label>
+            </div>
+            <div class="group-Music">
+                <p>Select Your favourite music genre</p>
+                <select name="fav-genre" id="drpdwn" class="form-control" required>
+                    <option disabled selected value>Select genre</option>
+                    <option value="rock">Rock/Alternative</option>
+                    <option value="pop">Pop</option>
+                    <option value="hiphop">HipHop/Rap/Trap</option>
+                    <option value="electro">Electro/Danse/House</option>
+                    <option value="soundtracks">Soundstracks</option>
+                    <option value="classic">Classical/Opera/Jazz</option>
+                    <option value="singer">singer/SonfWriter</option>
+                    <option value="afrobeat">AfroBeat/AfroPop/AfroTrap</option>
+                    <option value="world">World</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="group-Music">
+                <p>Do you play a musical instrument?</p>
+                <label>
+                  <input
+                    type="radio"
+                    name="long"
+                    value="Yes"
+                    class="input-radio"
+                    checked
+                  />Yes
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="long"
+                    value="No"
+                    class="input-radio"
+                  />No
+                </label>
+            </div>
+            <div class="group-Music">
+                <p>Where do you usually listen to music?</p>
+                <select name="time" id="dropdown" class="form-control" required>
+                      <option disabled selected value>Select an application</option>
+                      <option value="Spotify">Spotify</option>
+                      <option value="Youtube Music">Youtube Music</option>
+                      <option value="Gaana">Gaana</option>
+                      <option value="Apple Music">Apple Music</option>
+                      <option value="Amazon Music">Amazon Music</option>
+                      <option value="Time Cloud">Time Cloud</option>
+                      <option value="other">Other</option>
+                    </select>
+
+            </div>
+            <div class="group-Music">
+                <p>Which language songs do you prefer?</p>
+                <select name="time" id="dropdown" class="form-control" required>
+                      <option disabled selected value>Select any language</option>
+                      <option value="English">English</option>
+                      <option value="Malayalam">Malayalam</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="other">Other</option>
+                    </select>
+
+            </div>
+            <div class="group-Music">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="group-Music">
+                <button type="submit" id="submit" class="submit-btn">
+                    Submit
+                </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

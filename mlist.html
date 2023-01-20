@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+
+    <title>TOP 10 MUSIC LIST</title>
+    <link rel="icon" href="https://cdn3.vectorstock.com/i/1000x1000/06/52/music-player-icon-for-logos-websites-and-apps-vector-30290652.jpg">
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        margin: 0;
+        font-family: Lato, sans-serif;
+        color: #222;
+        font-size: .9em;
+    }
+    
+    main {
+        display: flex;
+        flex: 1 0 auto;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex: 0 0 40px;
+        background-color: #f2f2f2;
+    }
+    
+    aside i {
+        font-size: 0.9em;
+    }
+    
+    .content {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+    }
+    
+    .music-list {
+        flex: 1 0 auto;
+        list-style-type: none;
+        padding: 5px 10px 0px;
+    }
+    
+    .music-list li {
+        display: flex;
+        padding: 0 20px;
+        min-height: 50px;
+    }
+    
+    li p {
+        flex: 0 0 25%;
+    }
+    
+    li:nth-child(2n) {
+        background: #f2f2f2;
+    }
+    
+    footer {
+        flex: 0 0 90px;
+        /* flex-basis is 90px. This means height is 90px */
+        padding: 10px;
+        color: #fff;
+        background: rgba(61, 100, 158, .9);
+    }
+    
+    #head {
+        font-size: medium;
+    }
+    
+    @media (max-width: 1028px) {
+        .sm-hide {
+            display: none;
+        }
+        .sm-text-center {
+            text-align: center;
+        }
+        /*album details*/
+        /*song lists*/
+        li p {
+            flex: 0 0 50%;
+        }
+        /*music control*/
+    }
+</style>
+
+<body>
+
+    <main>
+        <aside>
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-home"></i>
+            <i class="fa fa-search"></i>
+            <i class="fa fa-volume-up"></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-spotify"></i>
+            <i class="fa fa-cog"></i>
+            <i class="fa fa-soundcloud"></i>
+        </aside>
+
+        <ul class="music-list">
+            <div>
+                <h2>TOP 10 MUSICS</h2>
+            </div>
+            <li>
+                <p class="head"><b>Song</b></p>
+                <p class="head"><b>Artist</b></p>
+                <p class="head"><b>Link</b></p>
+            </li>
+            <li>
+                <p>1. Bad Habit</p>
+                <p class="sm-hide">Steve Lacy</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=1E2ihUl6ed4&feature=share">click here to listen the song</a></p>
+            </li>
+
+            <li>
+                <p>2. Un Holy</p>
+                <p class="sm-hide">Sam Smith & Kim Petras</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=8VKD-IlvibI&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>3. As It Was</p>
+                <p class="sm-hide">Harry Styles</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=nujn6wbr-e8&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>4. I Like You (A Happier Song)</p>
+                <p class="sm-hide">Post Malone Featuring Doja Cat</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=n-UIRqgXjGA&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>5. Sunroof</p>
+                <p class="sm-hide">Nicky Youre & dazy</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=eZCWyFNV_ZM&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>6. I Ain't Worried</p>
+                <p class="sm-hide">OneRepublic</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=NF7oYY7Lhq4&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>7. You Proof</p>
+                <p class="sm-hide">Morgan Wallen</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=ox6daBQnM9A&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>8. Super Freaky Girl</p>
+                <p class="sm-hide">Nicki Minaj</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=siEhmp7Hnh8&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>9. The Kind Of Love We Make</p>
+                <p class="sm-hide">Luke Combs</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=IC16XVKc8CQ&feature=share">click here to listen the song</a></p>
+            </li>
+            <li>
+                <p>10. About Damn Time</p>
+                <p class="sm-hide">Lizzo</p>
+
+                <p>
+                    <a href="https://music.youtube.com/watch?v=wnWxeBfV2ZQ&feature=share">click here to listen the song</a></p>
+            </li>
+        </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
